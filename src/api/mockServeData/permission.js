@@ -16,21 +16,21 @@ export default {
               name: 'home',
               label: '首页',
               icon: 's-home',
-              url: 'Home.vue'
+              url: 'HomePage.vue'
             },
             {
               path: '/mall',
               name: 'mall',
               label: '商品管理',
               icon: 'video-play',
-              url: 'Mall.vue'
+              url: 'MallPage.vue'
             },
             {
               path: '/user',
               name: 'user',
               label: '用户管理',
               icon: 'user',
-              url: 'User.vue'
+              url: 'UserPage.vue'
             },
             {
               label: '其他',
@@ -67,14 +67,14 @@ export default {
               name: 'home',
               label: '首页',
               icon: 's-home',
-              url: 'Home.vue'
+              url: 'HomePage.vue'
             },
             {
-              path: '/video',
-              name: 'video',
+              path: '/mall',
+              name: 'mall',
               label: '商品管理',
               icon: 'video-play',
-              url: 'Mall.vue'
+              url: 'MallPage.vue'
             }
           ],
           token: Mock.Random.guid(),

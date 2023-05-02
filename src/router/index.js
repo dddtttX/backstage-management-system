@@ -18,29 +18,30 @@ const routes = [
     {
         path: "/",
         component: MainPage,
+        name: 'Main',
         redirect: "/home", //重定向
-        children: [
-            {
-                path: "home", name: "home", component: HomePage
-            },
-            {
-                path: "user", name: "user", component: UserPage
-            },
-            {
-                path: "mall", name: "mall", component: MallPage
-            },
-            {
-                path: "one", name: "page1", component: PageOne
-            },
-            {
-                path: "two", name: "page2", component: PageTwo
-            },
-        ],
+        // children: [
+        //     {
+        //         path: "home", name: "home", component: HomePage
+        //     },
+        //     {
+        //         path: "user", name: "user", component: UserPage
+        //     },
+        //     {
+        //         path: "mall", name: "mall", component: MallPage
+        //     },
+        //     {
+        //         path: "page1", name: "page1", component: PageOne
+        //     },
+        //     {
+        //         path: "page2", name: "page2", component: PageTwo
+        //     },
+        // ],
     },
     {
         path: "/login",
         component: LoginPage,
-        name:'login'
+        name: 'login'
 
     }
 ]

@@ -52,11 +52,20 @@ export default {
               // token信息存入cookie
               if (token) {
                 Cookie.set("token", token);
+
+                // 获取菜单数据，
+                const { menu } = data.data;
+                // 存入store数据中
+                this.$store.commit("setMenuData", menu);
+                // 传入路由数据到menu中
+                this.$store.commit("addMenuData", this.$router);
                 // 跳转到首页
                 this.$router.push("/home");
+                console.log(this.$route ,"*********");
+
               }
             } else {
-              this.$message.error("账号密码有误");
+              this.$message.error(data.data.message);
             }
           });
         }

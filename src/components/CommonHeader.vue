@@ -34,8 +34,9 @@ import Cookie from 'js-cookie';
              this.$store.commit("collapseMenu")
             },
             logout(){
-                console.log("点击了退出");
                 Cookie.remove('token')
+                // 清除cookie中的menu
+                Cookie.remove('menuData')
                 this.$router.push('/login')
             }
         },
