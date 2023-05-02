@@ -19,11 +19,21 @@ const routes = [
         component: MainPage,
         redirect: "/home", //重定向
         children: [
-            { path: "home", component: HomePage },
-            { path: "user", component: UserPage },
-            { path: "mall", component: MallPage },
-            { path: "one", component: PageOne },
-            { path: "two", component: PageTwo },
+            {
+                path: "home", name: "home", component: HomePage
+            },
+            {
+                path: "user", name: "user", component: UserPage
+            },
+            {
+                path: "mall", name: "mall", component: MallPage
+            },
+            {
+                path: "one", name: "page1", component: PageOne
+            },
+            {
+                path: "two", name: "page2", component: PageTwo
+            },
         ],
     },
 ]

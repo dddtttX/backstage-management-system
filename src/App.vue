@@ -9,15 +9,16 @@
 </template>
 
 <script>
-    export default {
-        name: "App",
-    }
+export default {
+    name: "App",
+}
 </script>
 
 <style lang="less">
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-    }
+html,
+body,
+p {
+    margin: 0;
+    padding: 0;
+}
 </style>
