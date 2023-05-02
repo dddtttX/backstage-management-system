@@ -104,15 +104,12 @@ export default {
       // 提交用户表单
       this.$refs.form.validate(valid => {
         if (valid) {
-          console.log("*******1111********");
           if (this.modalType === 0) {
             addUser(this.form).then(() => {
-              console.log("00000");
               this.getList();
             });
           } else {
             editUser(this.form).then(() => {
-              console.log("11111");
               this.getList();
             });
           }

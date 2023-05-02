@@ -35,3 +35,10 @@ export const delUser = (data) =>{
         '/user/del', data
     )
 }
+
+// 登录验证
+export const getMenu = (params) => {
+    return http.post(
+        '/login/get_permission', params
+    )
+}

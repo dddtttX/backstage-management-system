@@ -8,6 +8,7 @@ import UserPage from "../views/UserPage"
 import MallPage from "../views/MallPage"
 import PageOne from "../views/PageOne"
 import PageTwo from "../views/PageTwo"
+import LoginPage from "../views/LoginPage"
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,12 @@ const routes = [
             },
         ],
     },
+    {
+        path: "/login",
+        component: LoginPage,
+        name:'login'
+
+    }
 ]
 // 3.创建router实例
 const router = new VueRouter({
